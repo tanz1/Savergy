@@ -1,0 +1,66 @@
+@font-face
+{
+	font-family: appfont;
+	src: url(Mono.ttf);
+    /* This freeware font is the property of Kevin Richey.  © 2009. All rights reserved.
+
+            This font may be used for any commercial and non-commercial use.  Feel free to pass it along, but please include this document.  I also ask that you send me an email to let me know what you think of it and where you got it (just so I know where it is floating around).  I would very much appreciate it.
+
+            Kevin Richey is not liable for any damages or loss, including, but not limited to, damages from loss of business profit, business interruption, and loss of business information, due to the use of this product, or inability to use this product.  This font is a Freeware product and not intended for sale.  By installing this font, you have agreed to the above terms. 
+
+            Thanks again and keep creating!!
+
+            Kevin
+
+            email: logan_kruger@hotmail.com
+        */
+}
+
+body
+{
+    font-family: appfont;
+
+}
+
+.optionDiv
+{
+    border: none;
+    margin-left:auto;
+    margin-right:auto;
+    width: 70%;
+}
+
+
+.appliance
+{
+color: black;
+font-size: 125%;
+font-family: appfont;
+border-style: solid;
+border-width: medium;
+border-color: black;
+width: 53%
+}
+.num
+{
+color: black;
+font-size: 125%;
+font-family: appfont;
+border-style: solid;
+border-width: medium;
+border-color: black;
+width: 20%;
+}
+
+.Logo {
+    margin-right: auto;
+    margin-left: auto;
+    width: 15%;
+}
+
+.Image_Center {
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
