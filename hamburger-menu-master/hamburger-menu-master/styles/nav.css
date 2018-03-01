@@ -1,6 +1,5 @@
-/* source url https://github.com/mranenko/hamburger-menu for hamburger menu*/
-
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -9,78 +8,19 @@
   -ms-text-size-adjust: 100%; }
   *:focus {
     outline: none; }
-    
-@font-face
-{
-	font-family: appfont;
-	src: url(Mono.ttf);
-    /* This freeware font is the property of Kevin Richey.  © 2009. All rights reserved.
 
-            This font may be used for any commercial and non-commercial use.  Feel free to pass it along, but please include this document.  I also ask that you send me an email to let me know what you think of it and where you got it (just so I know where it is floating around).  I would very much appreciate it.
+html {
+  background: #5634d1;
+  color: white;
+  font: normal 10px/1.42857 "Source Sans Pro", Helvetica, Arial, sans-serif; }
 
-            Kevin Richey is not liable for any damages or loss, including, but not limited to, damages from loss of business profit, business interruption, and loss of business information, due to the use of this product, or inability to use this product.  This font is a Freeware product and not intended for sale.  By installing this font, you have agreed to the above terms. 
+body {
+  background: none;
+  color: inherit;
+  font: inherit; }
 
-            Thanks again and keep creating!!
-
-            Kevin
-
-            email: logan_kruger@hotmail.com
-        */
-}
-
-body
-{
-    font-family: appfont;
-
-}
-.logodiv
-{
-    margin-left: auto;
-    margin-right: auto;
-    height: 10%;
-    width: 10%;
-    
-}
-
-.optionDiv
-{
-    border: none;
-    margin-left:auto;
-    margin-right:auto;
-    width: 70%;
-}
-
-
-.appliance
-{
-color: black;
-font-size: 125%;
-font-family: appfont;
-border-style: solid;
-border-width: medium;
-border-color: black;
-width: 53%
-}
-.num
-{
-color: black;
-font-size: 125%;
-font-family: appfont;
-border-style: solid;
-border-width: medium;
-border-color: black;
-width: 20%;
-}
-
-.Logo {
-    margin-right: auto;
-    margin-left: auto;
-	position: relative;
-    height: 100%;
-
-}
 a {
-  color: black;
+  color: inherit;
   cursor: pointer;
   text-decoration: none; }
   a:hover {
@@ -113,7 +53,7 @@ a {
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background: black;
+    background: white;
     content: '';
     height: 0.4rem;
     width: 100%; }
@@ -144,7 +84,7 @@ a {
   -ms-transition: left 0.5s ease;
   -o-transition: left 0.5s ease;
   transition: left 0.5s ease;
-  background: gray;
+  background: #28dde0;
   color: white;
   cursor: pointer;
   font-size: 2rem;
