@@ -73,13 +73,44 @@ border-color: black;
 width: 20%;
 }
 
-.Logo {
+.Logo 
+{
     margin-right: auto;
     margin-left: auto;
 	position: relative;
     height: 100%;
-
 }
+.buttonDiv
+{
+margin-right: auto;
+margin-left: auto;
+position: relative;
+height: 10%;
+width: 37%;
+}
+
+
+.calcButton
+{
+    width:100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    height:100%;
+    font-size: 1em;
+}
+
+.output
+{
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 25%;
+    height: 10%;
+    font-size: 2em;
+    text-align: center; 
+}
+
 a {
   color: black;
   cursor: pointer;
@@ -94,10 +125,10 @@ a {
   user-select: none;
   cursor: pointer;
   height: 2rem;
-  left: 2rem;
+  left: 1rem; 
   position: fixed;
-  top: 2rem;
-  width: 3.6rem;
+  top: 1rem;
+  width: 2rem;
   z-index: 2; }
   .nav-toggle:hover {
     opacity: 0.8; }
@@ -116,14 +147,14 @@ a {
     transition: all 0.5s ease;
     background: black;
     content: '';
-    height: 0.4rem;
+    height: 0.2rem;
     width: 100%; }
   .nav-toggle .nav-toggle-bar {
     margin-top: 0; }
   .nav-toggle .nav-toggle-bar::after {
-    margin-top: 0.8rem; }
+    margin-top: 0.4rem; }
   .nav-toggle .nav-toggle-bar::before {
-    margin-top: -0.8rem; }
+    margin-top: -0.4rem; }
   .nav-toggle.expanded .nav-toggle-bar {
     background: transparent; }
   .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {

@@ -9,12 +9,11 @@ Savergy (Working Title)
 </title>
 </head>
 <body>
-
-<div class = "logodiv">
-     <img src="Logo.png" class="Logo" alt="logo">
-</div>
 <div class="nav-toggle">
 	<div class="nav-toggle-bar"></div>
+</div>
+<div class = "logodiv">
+     <img src="Logo.png" class="Logo" alt="logo">
 </div>
 <nav class="nav">
 	<ul>
@@ -63,13 +62,13 @@ Savergy (Working Title)
       </select>
     </div>
     <div class="optionDiv">
-          <select class="appliance" name="appliance" id="appliance1">
+          <select class="appliance" name="appliance" id="appliance2">
             <option value="0">None</option>
             <option value="1">Light bulb</option>
             <option value="2">Refridgerator</option>
             <option value="3">TV</option>
         </select>
-        <select class = "num" name="quantity" id="quantity1">
+        <select class = "num" name="quantity" id="quantity2">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -82,7 +81,7 @@ Savergy (Working Title)
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
-        <select class = "num" name="hours" id="hours1">
+        <select class = "num" name="hours" id="hours2">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -102,13 +101,13 @@ Savergy (Working Title)
       </select>
     </div>
     <div class="optionDiv">
-          <select class="appliance" name="appliance" id="appliance1">
+          <select class="appliance" name="appliance" id="appliance3">
             <option value="0">None</option>
             <option value="1">Light bulb</option>
             <option value="2">Refridgerator</option>
             <option value="3">TV</option>
         </select>
-        <select class = "num" name="quantity" id="quantity1">
+        <select class = "num" name="quantity" id="quantity3">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -121,7 +120,7 @@ Savergy (Working Title)
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
-        <select class = "num" name="hours" id="hours1">
+        <select class = "num" name="hours" id="hours3">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -141,13 +140,13 @@ Savergy (Working Title)
       </select>
     </div>
     <div class="optionDiv">
-          <select class="appliance" name="appliance" id="appliance1">
+          <select class="appliance" name="appliance" id="appliance4">
             <option value="0">None</option>
             <option value="1">Light bulb</option>
             <option value="2">Refridgerator</option>
             <option value="3">TV</option>
         </select>
-        <select class = "num" name="quantity" id="quantity1">
+        <select class = "num" name="quantity" id="quantity4">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -160,7 +159,7 @@ Savergy (Working Title)
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
-        <select class = "num" name="hours" id="hours1">
+        <select class = "num" name="hours" id="hours4">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -180,13 +179,13 @@ Savergy (Working Title)
       </select>
     </div>
     <div class="optionDiv">
-          <select class="appliance" name="appliance" id="appliance1">
+          <select class="appliance" name="appliance" id="appliance5">
             <option value="0">None</option>
             <option value="1">Light bulb</option>
             <option value="2">Refridgerator</option>
             <option value="3">TV</option>
         </select>
-        <select class = "num" name="quantity" id="quantity1">
+        <select class = "num" name="quantity" id="quantity5">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -199,7 +198,7 @@ Savergy (Working Title)
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
-        <select class = "num" name="hours" id="hours1">
+        <select class = "num" name="hours" id="hours5">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -219,7 +218,13 @@ Savergy (Working Title)
       </select>
     </div>
 		</div>
- <button onclick="function">Calculate!</button>
+ <div> </div>
+ <div class="buttonDiv">
+ <button class="calcButton" onclick="calculate()">Calculate</button>
+ </div>
+<div> </div>
+<div> </div>
+ <div id="output" class="output">test</div>
  <script src="calc.js"></script>
 </body>
 </html>
