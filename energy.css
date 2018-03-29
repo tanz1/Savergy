@@ -111,6 +111,20 @@ width: 37%;
     text-align: center; 
 }
 
+.energytips
+{
+    width: 30%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+.aboutus
+{
+    width: 30%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
 a {
   color: black;
   cursor: pointer;

@@ -33,6 +33,26 @@ function calculate()
 
 }());
 
+//show hide effects
+$(document).ready(function(){
+    $("#tips").click(function(){
+        $("#calculator").hide();
+        $("#energytips").show();
+        $("#aboutus").hide();
+ 
+    });
+    $("#home").click(function(){
+        $("#calculator").show();
+        $("#aboutus").hide();
+        $("#energytips").hide();
+   });
+   $("#about").click(function(){
+        $("#calculator").hide();
+        $("#aboutus").show();
+        $("#energytips").hide();
+    });
+});
+//source url for jquery: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_show 
 
 
 
