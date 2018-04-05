@@ -55,22 +55,24 @@ body
 .appliance
 {
 color: black;
-font-size: 125%;
+font-size: 160%;
 font-family: appfont;
 border-style: solid;
 border-width: medium;
 border-color: black;
-width: 53%
+width: 55%;
+height: 10%;
 }
 .num
 {
 color: black;
-font-size: 125%;
+font-size: 160%;
 font-family: appfont;
 border-style: solid;
 border-width: medium;
 border-color: black;
 width: 20%;
+height: 10%
 }
 
 .Logo 
@@ -125,6 +127,7 @@ width: 37%;
     margin-right:auto;
     text-align: center;
 }
+
 a {
   color: black;
   cursor: pointer;
@@ -182,6 +185,11 @@ a {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
+    
+.maja
+{
+    height: 3em;
+}
 
 /* nav */
 .nav {
