@@ -8,10 +8,15 @@ function calculate()
         var electronic = document.getElementById('appliance' +i ).value;
         var quantity = document.getElementById('quantity' +i).value;
         var hours = document.getElementById('hours' +i).value;
-        total[i-1] = electronic * quantity * hours;
+        total[i-1] = (electronic/1000) * quantity * hours;
         i++;
     }
-       document.getElementById("output").innerHTML = total.reduce(function(a, b){return a+b;});
+       var wattTotal = total.reduce(function(a, b){return a+b;});
+       var getUtil = document.getElementById('powercomp').value;
+       var bill =(getUtil * wattTotal).toFixed(2);
+       
+       document.getElementById("output").innerHTML =  wattTotal + ' KWH Used';
+       document.getElementById("billOutput").innerHTML = "$" + bill + " energy cost for 1 day";
        // assistance from https://stackoverflow.com/questions/16057672/sum-values-from-an-array-in-javascript
 }
 
@@ -60,7 +65,7 @@ DATA
 // source url https://stackoverflow.com/questions/16845373/replace-select-box-options-with-json-result
 var json =
     [
-            { text : "Aquarium equipment" , value : "24"},
+            { text : "Select Appliance" , value : "0"},
             { text : "Boom box" , value : "8"},
             { text : "Cable box" , value : "140"},
             { text : "CD player" , value : "7"},
