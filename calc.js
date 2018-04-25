@@ -1,3 +1,48 @@
+//add boxes
+function addSel()
+{
+   var getLen = document.getElementsByClassName("appliance").length ;
+   var getIDNum = getLen + 1;
+  $("#appendSelect").append( "<div class=\"optionDiv\"><select class=\"appliance\" name=\"appliance\" id=\"appliance"+getIDNum+"\"></select><var> </var><select class = \"num\" name=\"quantity\" id=\"quantity"+getIDNum+"\"></select><var> </var><select class = \"num\" name=\"hours\" id=\"hours"+getIDNum+"\"></select></div>")
+  var options=$('<select/>');
+    $.each(json, function(id, ob){
+      options.append($('<option>',    
+                      {text:ob.text,
+                        value:ob.value}));
+    });
+var appNum = document.getElementsByClassName("appliance").length;
+var count
+for (count = 0; count <= appNum; count++)
+    {
+    $('#appliance'+count).html(options.html());
+    }
+     
+   var options2=$('<select/>');
+    $.each(hrsJSON, function(id, ob){
+      options2.append($('<option>',    
+                      {text:ob.text,
+                        value:ob.value}));
+    });
+var appNum2 = document.getElementsByName("hours").length;
+var count2
+for (count2 = 0; count2 <= appNum2; count2++)
+    {
+    $('#hours'+count2).html(options2.html());
+    }
+    var options3=$('<select/>');
+    $.each(qtyJSON, function(id, ob){
+      options3.append($('<option>',    
+                      {text:ob.text,
+                        value:ob.value}));
+    });
+var appNum3 = document.getElementsByName("quantity").length;
+var count3
+for (count3 = 0; count3 <= appNum3; count3++)
+    {
+    $('#quantity'+count3).html(options3.html());
+    }
+}
+//calculate total
 function calculate()
 {
     var i = 1;
@@ -121,7 +166,8 @@ var json =
             { text : "Waterbed heater" , value : "350"},
             { text : "Well pump" , value : "725"}
 ];
- var options=$('<select/>');
+//appends JSON to Appliances
+var options=$('<select/>');
     $.each(json, function(id, ob){
       options.append($('<option>',    
                       {text:ob.text,
@@ -133,3 +179,75 @@ for (count = 0; count <= appNum; count++)
     {
     $('#appliance'+count).html(options.html());
     }
+//appends JSON to hours
+var hrsJSON =
+    [
+            { text: "0" , value : "1"},
+            { text : "1" , value : "1"},
+            { text : "2" , value : "2"},
+            { text : "3" , value : "3"},
+            { text : "4" , value : "4"},
+            { text : "5" , value : "5"},
+            { text : "6" , value : "6"},
+            { text : "7" , value : "7"},
+            { text : "8" , value : "8"},
+            { text : "9" , value : "9"},
+            { text : "10" , value : "10"},
+            { text : "11" , value : "11"},
+            { text : "12" , value : "12"},
+            { text : "13" , value : "13"},
+            { text : "14" , value : "14"},
+            { text : "15" , value : "15"},
+            { text : "16" , value : "16"},
+            { text : "17" , value : "17"},
+            { text : "18" , value : "18"},
+            { text : "19" , value : "19"},
+            { text : "20" , value : "20"},
+            { text : "21" , value : "21"},
+            { text : "22" , value : "22"},
+            { text : "23" , value : "23"},
+            { text : "24" , value : "24"},
+    ];
+    var options2=$('<select/>');
+    $.each(hrsJSON, function(id, ob){
+      options2.append($('<option>',    
+                      {text:ob.text,
+                        value:ob.value}));
+    });
+var appNum2 = document.getElementsByName("hours").length;
+var count2
+for (count2 = 0; count2 <= appNum2; count2++)
+    {
+    $('#hours'+count2).html(options2.html());
+    }
+//appens JSON to quantity
+var qtyJSON =
+    [
+            { text : "0",  value : "0"},
+            { text : "1" , value : "1"},
+            { text : "2" , value : "2"},
+            { text : "3" , value : "3"},
+            { text : "4" , value : "4"},
+            { text : "5" , value : "5"},
+            { text : "6" , value : "6"},
+            { text : "7" , value : "7"},
+            { text : "8" , value : "8"},
+            { text : "9" , value : "9"},
+            { text : "10" , value : "10"},
+            { text : "11" , value : "11"},
+            { text : "12" , value : "12"},
+    ];
+       var options3=$('<select/>');
+    $.each(qtyJSON, function(id, ob){
+      options3.append($('<option>',    
+                      {text:ob.text,
+                        value:ob.value}));
+    });
+var appNum3 = document.getElementsByName("quantity").length;
+var count3
+for (count3 = 0; count3 <= appNum3; count3++)
+    {
+    $('#quantity'+count3).html(options3.html());
+    }
+
+    
