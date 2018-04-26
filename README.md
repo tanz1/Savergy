@@ -1,2 +1,0 @@
-# Savergy
-Energy saving application
