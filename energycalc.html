@@ -1,224 +1,117 @@
 <!DOCTYPE = html>
-<html lang = en>
+<html manifest="offline.appcahce">
 <head>
 <meta name="viewport" content= "width=device-width, initial-scale=1" charset = "utf-8">
 <link rel="stylesheet" type="text/css" href= "energy.css">
+<link rel="icon" type="image/png" href="icon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <title>
-Savergy (Working Title)
+Maja Energy Calculator
 </title>
 </head>
 <body>
-<div class="banner">
-    <div>
-        <img src="Logo.png" alt="logo" width="150" height = "100" align="left"/>
-        <h1>SAVERGY</h1>
-    </div>
+<div class="nav-toggle">
+	<div class="nav-toggle-bar"></div>
 </div>
-
-<div class="navbar">
-<ul>
-    <li><a href = "home"> Home</a></li>
-    <li><a href="About Us"> About Us</a></li>
-    <li><a href="Calc">Energy Calculator</a></li>
-    <li><a href="Tips">Energy Saving Tips</a></li>
-</ul>
+<div class = "logodiv">
+     <img src="Logo.png" class="Logo" alt="logo">
 </div>
-
-    <div class="optionDiv">
-          <select class="appliance" name="appliance" id="appliance1">
-            <option value="0">None</option>
-            <option value="1">Light bulb</option>
-            <option value="2">Refridgerator</option>
-            <option value="3">TV</option>
-        </select>
-        <select class = "num" name="quantity" id="quantity1">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        <select class = "num" name="hours" id="hours1">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-      </select>
+<!--navigation -->
+<nav class="nav">
+	<ul>
+		<li><a id="home">Home</a></li>
+        <li> </li>
+		<li><a id="tips">Energy Saving Tips</a></li>
+        <li> </li>
+		<li><a id="about">Team</a></li>
+	</ul>
+</nav>
+<!-- nav ends -->
+<!-- Caclulator and Selection -->
+<div id="calculator">
+    <div class = "description">
     </div>
-    <div class="optionDiv">
-          <select class="appliance" name="appliance" id="appliance1">
-            <option value="0">None</option>
-            <option value="1">Light bulb</option>
-            <option value="2">Refridgerator</option>
-            <option value="3">TV</option>
-        </select>
-        <select class = "num" name="quantity" id="quantity1">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        <select class = "num" name="hours" id="hours1">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-      </select>
-    </div>
-    <div class="optionDiv">
-          <select class="appliance" name="appliance" id="appliance1">
-            <option value="0">None</option>
-            <option value="1">Light bulb</option>
-            <option value="2">Refridgerator</option>
-            <option value="3">TV</option>
-        </select>
-        <select class = "num" name="quantity" id="quantity1">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        <select class = "num" name="hours" id="hours1">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-      </select>
-    </div>
-    <div class="optionDiv">
-          <select class="appliance" name="appliance" id="appliance1">
-            <option value="0">None</option>
-            <option value="1">Light bulb</option>
-            <option value="2">Refridgerator</option>
-            <option value="3">TV</option>
-        </select>
-        <select class = "num" name="quantity" id="quantity1">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        <select class = "num" name="hours" id="hours1">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-      </select>
-    </div>
-    <div class="optionDiv">
-          <select class="appliance" name="appliance" id="appliance1">
-            <option value="0">None</option>
-            <option value="1">Light bulb</option>
-            <option value="2">Refridgerator</option>
-            <option value="3">TV</option>
-        </select>
-        <select class = "num" name="quantity" id="quantity1">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select>
-        <select class = "num" name="hours" id="hours1">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-      </select>
-    </div>
-
+        <div class="optionDiv">
+              <select class="appliance" name="appliance" id="appliance1">
+            </select>       
+            <select class = "num" name="quantity" id="quantity1">
+            </select>
+            <select class = "num" name="hours" id="hours1">
+          </select>
+        </div>
+        <div class="optionDiv">
+              <select class="appliance" name="appliance" id="appliance2">
+            </select>
+            <select class = "num" name="quantity" id="quantity2">
+            </select>
+            <select class = "num" name="hours" id="hours2">
+          </select>
+        </div>
+        <div class="optionDiv">
+              <select class="appliance" name="appliance" id="appliance3">
+            </select>
+            <select class = "num" name="quantity" id="quantity3">
+            </select>
+            <select class = "num" name="hours" id="hours3">
+          </select>
+        </div>
+        <div class="optionDiv">
+              <select class="appliance" name="appliance" id="appliance4">
+            </select>
+            <select class = "num" name="quantity" id="quantity4">
+            </select>
+            <select class = "num" name="hours" id="hours4">
+          </select>
+        </div>
+        <div class="optionDiv">
+              <select class="appliance" name="appliance" id="appliance5">
+            </select>
+            <select class = "num" name="quantity" id="quantity5">
+            </select>
+            <select class = "num" name="hours" id="hours5">
+          </select>
+        </div>
+        <var id = "appendSelect"></var>
+        <div class= "paddingDiv"></div>
+        <div class = "optionDiv">
+             <select class = "powercomp" name="powercomp" id="powercomp">
+            <option value = .12>US Standard Power Inc. </option>
+            </select>
+         </div>
+     <br>
+     <div class="buttonDiv">
+     <button class="addButton" type="button" onclick="addSel()">Add more appliances</button>
+     <br>
+     <button class="calcButton" onclick="calculate()">Calculate</button>
+     </div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+    <div id="output" class="output"></div>
+    <br>
+    <br>
+    <div id="billOutput" class="output"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<!--calculator ends -->
+<!-- Energy tips -->
+<!-- hiding assistance from https://stackoverflow.com/questions/6094204/hide-div-when-page-load -->
+<div class="energytips" id="energytips" style="display:none">
+Don't forget to turn off the lights!
+</div>
+<!--about us -->
+<div class="aboutus" id="aboutus" style="display:none">
+<li>Developed by Team Maja.</li>
+<li> Send bug reports to teammaja@gmail.com </li>
+</div>
+<script src="calc.js"></script>
 </body>
 </html>
