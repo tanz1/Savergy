@@ -1,7 +1,7 @@
 <script id="appliance-data"  type="application/json">
     {
         "appliances" : [
-            { "appliance" : "Aquarium equipment" , "watts" : "24"},
+            { "appliance" : "Samsung 32in 5871011" , "watts" : "54"},
             { "appliance" : "Boom box" , "watts" : "8"},
             { "appliance" : "Cable box" , "watts" : "140"},
             { "appliance" : "CD player" , "watts" : "7"},
