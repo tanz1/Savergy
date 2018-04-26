@@ -47,8 +47,8 @@ function calculate()
 {
     var i = 1;
     var total = [];
- 
-    while(i < 6)
+    var size = document.getElementsByName("quantity").length;
+    while(i <= size)
     {
         var electronic = document.getElementById('appliance' +i ).value;
         var quantity = document.getElementById('quantity' +i).value;
@@ -60,7 +60,7 @@ function calculate()
        var getUtil = document.getElementById('powercomp').value;
        var bill =(getUtil * wattTotal).toFixed(2);
        
-       document.getElementById("output").innerHTML =  wattTotal + ' KWH Used';
+       document.getElementById("output").innerHTML =  wattTotal.toFixed(3) + ' KWH Used';
        document.getElementById("billOutput").innerHTML = "$" + bill + " energy cost for 1 day";
        // assistance from https://stackoverflow.com/questions/16057672/sum-values-from-an-array-in-javascript
 }
