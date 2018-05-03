@@ -1,0 +1,166 @@
+<!DOCTYPE = html>
+<html manifest="offline.appcahce">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="viewport" content= "width=device-width, initial-scale=1" charset = "utf-8">
+<link rel="stylesheet" type="text/css" href= "energy.css">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="icon" sizes="192x192" href="homeicon.png">
+<link rel="icon" sizes="152x152" href="homeicon_apple.png">
+<link rel="apple-touch-icon" sizes="128x128" href="homeicon_lowres.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>
+Maja Energy Calculator
+</title>
+</head>
+<body>
+<div class="nav-toggle">
+	<div class="nav-toggle-bar"></div>
+</div>
+<div class = "logodiv">
+     <img src="qsc.png" class="Logo" alt="logo">
+</div>
+<!--navigation -->
+<nav class="nav">
+	<ul>
+		<li><a id="home">Calculator</a></li>
+        <li> </li>
+		<li><a id="tips">Energy Saving Tips</a></li>
+        <li> </li>
+		<li><a id="about">About</a></li>
+	</ul>
+</nav>
+<!-- nav ends -->
+<!-- Caclulator and Selection -->
+<div id="calculator">
+    <div id ="label" class="label">
+        <div id ="appLabel" class="appLabel">
+    APPLIANCES
+			<br><img src ="uxpin-icon-set_window.png" class ="" alt="">
+        </div>
+        <div id ="qtyLabel" class="qtyLabel">
+        QUANTITY<br><img src ="uxpin-icon-set_site%20map.png" class ="" alt="">
+        </div>
+        <div id="hrLabel" class="hrLabel">
+        HOURS<br><img src ="uxpin-icon-set_clock.png" class ="" alt="">
+        </div>
+    </div>
+    <div id="output" class="output"></div>
+    <div id="billOutput" class="output"></div>
+    <div id="statement" class="output"></div>
+    <div class = "description">
+    </div>
+        <div class="optionDiv">
+            <select class="appliance" name="appliance" id="appliance1">
+            </select>       
+            <select class = "num" name="quantity" id="quantity1">
+            </select>
+            <select class = "num" name="hours" id="hours1">
+          </select>
+        </div>
+        <div class="optionDiv">
+              <select class="appliance" name="appliance" id="appliance2">
+            </select>
+            <select class = "num" name="quantity" id="quantity2">
+            </select>
+            <select class = "num" name="hours" id="hours2">
+          </select>
+        </div>
+        <div class="optionDiv">
+              <select class="appliance" name="appliance" id="appliance3">
+            </select>
+            <select class = "num" name="quantity" id="quantity3">
+            </select>
+            <select class = "num" name="hours" id="hours3">
+          </select>
+        </div>
+        <div class="optionDiv">
+              <select class="appliance" name="appliance" id="appliance4">
+            </select>
+            <select class = "num" name="quantity" id="quantity4">
+            </select>
+            <select class = "num" name="hours" id="hours4">
+          </select>
+        </div>
+        <div class="optionDiv">
+              <select class="appliance" name="appliance" id="appliance5">
+            </select>
+            <select class = "num" name="quantity" id="quantity5">
+            </select>
+            <select class = "num" name="hours" id="hours5">
+          </select>
+        </div>
+        <var id = "appendSelect"></var>
+        <div class= "paddingDiv"></div>
+        <div class = "powerDiv">
+            <div class = "centerDiv">
+            <!-- data provided by https://www.electricitylocal.com -->
+            <select class = "powercomp" name="powercomp" id="powercomp">
+            <option value = 0>Select Location</option>
+            <option value = 0> -- New York -- </option>
+            <option value = 0.1174> Albany</option>
+            <option value = 0.1903>Bronx</option>
+            <option value = 0.1903>Brooklyn</option>
+            <option value = 0.1903>Long Island</option>
+            <option value = .2321>Manhattan</option>
+            <option value = 0.1903>Queens</option>
+            <option value = 0>--Not Listed--</option>
+            <option value = .12> Other </option>
+            </select>
+            <select class = "days"name="days" id="days">
+            <option value = 0>Select Timeframe</option>
+            <option value = 1>Daily rates</option>
+            <option value = 30>Monthly rates</option>
+            <option value = 365>Yearly rates </option></select>
+            </div>
+         </div>
+     <div> </div>
+     <div class="buttonDiv">
+     <button class="addButton" onclick="addSel()">Add More...</button>
+     <div class="paddingDiv"></div>
+     <button class="calcButton" onclick="calculate()">Calculate</button>
+     <button class="reset" style="display:none">Go back...</button>
+     
+<div class="f1">		 
+<br>Maja Energy © 2018
+<br>
+Developed by Team Maja.
+<br>Send bug reports to teammaja@gmail.com
+</div>
+    
+     </div>
+</div>
+
+<!--calculator ends -->
+<!-- Energy tips -->
+<!-- hiding assistance from https://stackoverflow.com/questions/6094204/hide-div-when-page-load -->
+<div class="energytips" id="energytips" style="display:none">
+
+<img src="uxpin-icon-set_money.png" alt="Smiley face" width="42" height="42">
+<br>
+Don't forget to turn off the lights!
+<br>
+<img src="uxpin-icon-set_bulb.png" alt="Smiley face" width="42" height="42">
+<br>
+Shut off appliances when not in use 
+<br>
+<img src="uxpin-icon-set_lightning.png" alt="Smiley face" width="42" height="42">
+<br>Use cold water when washing clothes 
+
+<p>Maja Energy © 2018
+<br>Developed by Team Maja.
+<br>Send bug reports to teammaja@gmail.com</p>
+
+
+</div>
+<!--about us -->
+<div class="aboutus" id="aboutus" style="display:none">
+<ul>
+<li>© 2018 Maja Energy </li>
+<li>Developed by Team Maja.</li>
+<li> Send bug reports to teammaja@gmail.com </li>
+</ul>
+</div>
+<script src="calc.js"></script>
+</body>
+</html>
