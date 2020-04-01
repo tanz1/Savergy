@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content= "width = device-width, initial-scale= 1">
+	<!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+	.button {
+		background-color: #33FF77;
+		color: white;
+		padding: 10px;
+		font-size: 20px;
+		border: none;
+		cursor: pointer;
+	}
+	.button:hover, .dropbtn:focus{
+		background-color: #33FF77;
+
+	}
+	.drop {
+		position: relative;
+		display: inline-block;
+	}
+	.content{
+		display: none;
+    	position: absolute;
+    	background-color: #33FF77;
+    	min-width: 100px;
+    	overflow: auto;
+    	box-shadow: none;
+    	z-index: 1;
+
+	}
+	.appliance{
+		color: black;
+		padding:10px 10px;
+		text-decoration:none;
+		display: block;
+	}
+	.appliance a:hover {background-color: #ddd}
+
+	.show{display: block;}
+
+	.center {
+    	margin: auto;
+    	width: 20%;
+    	padding: 10px
+}
+	.backg-1{
+		background-color: #b3ffff;
+	}
+	.backg-2{
+		background-color: #ffd9b3;
+	}
+</style>
+</head>
+<div class="backg-1">
+<header class="center"> 
+
+
+	<img src="https://lh3.googleusercontent.com/Izog-IZysHv6amk9GyGDT-d6EBgWEvLdVQrBsAxVLMCfb-jUZ3LnBvf9DChTmbxoiguBlCG9v0WDR1sH5Uc3IEaZQOC_jeblPWF7Mu32p7-JFIHrf4AKTPm4s0DfaX-R_ij5ij1t" alt="logo" width="150" height="100">
+	<h2>Energy Calculator</h2>
+</header>
+</div>
+<section class="center, backg-2">
+	<body>
+		<div class="drop">
+			<button onclick="select()" class="button">Appliances</button>
+  		<div id="Dropdown" class="content">
+    <select multiple>
+    	<option value= "Television">Television</option>
+    	<option value= "Microwave">Microwave</option>
+    	<option value= "Stove">Stove</option>
+    	<option value= "Heat">Heat</option>
+    </select>
+  </div>
+</div>
+
+<script>
+function select() {
+    document.getElementById("Dropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.button')) {
+
+    var dropdowns = document.getElementsByClassName("content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+</body>
+</section>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
